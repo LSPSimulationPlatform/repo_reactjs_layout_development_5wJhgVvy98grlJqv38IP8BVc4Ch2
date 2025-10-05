@@ -1,5 +1,5 @@
 import React from 'react'; // React core to allow JSX and component definitions
-import { Row, Col, Card, Tag, Typography } from 'antd'; // Ant Design layout / display primitives used across child components
+import { Row, Col, Card, Tag,Typography } from 'antd'; // Ant Design layout / display primitives used across child components
 import TechnologiesCard from './TechnologiesCard.tsx'; // Child component that renders the "Technologies Used" card
 import TimelineCard from './TimelineCard.tsx'; // Child component that renders the "Development Timeline" card
 
