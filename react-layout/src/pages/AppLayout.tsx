@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react'; // React core + hooks for state and lifecycle
 import { Outlet, useNavigate, useLocation } from 'react-router-dom'; // Routing helpers and outlet for nested routes
 import { Layout as AntLayout, Grid } from 'antd'; // Ant Design Layout and Grid utilities
-import Sidebar from "../components/Layout/Sidebar";
-import HeaderBar from "../components/Layout/HeaderBar";
-import FooterBar from "../components/Layout/FooterBar";
-
+import Sidebar from '../components/Layout/Sidebar.tsx'; // Sidebar component for app navigation
+import HeaderBar from '../components/Layout/HeaderBar.tsx'; // Header component (top bar with user menu)
+import FooterBar from '../components/Layout/FooterBar.tsx'; // Footer component for page bottom
 
 
 const { Content } = AntLayout; // Destructure Content subcomponent from AntD Layout
