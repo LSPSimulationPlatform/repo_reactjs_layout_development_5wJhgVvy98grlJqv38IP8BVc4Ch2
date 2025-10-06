@@ -7,6 +7,10 @@ import { ConfigProvider } from 'antd';
 // Import the app layout and page components used by the router
 import AppLayout from "./pages/AppLayout.tsx";
 import Home from "./pages/Home.tsx";
+import About from "./pages/About.tsx";
+import Users from "./pages/Users.tsx";
+import CreateUser from "./pages/CreateUser.tsx";
+
 
 // Create a React Query client instance used by QueryClientProvider
 const queryClient = new QueryClient();
@@ -33,12 +37,13 @@ const App = () => (
             {/* index route: renders Home at the root path "/" */}
             <Route index element={<Home />} />
             {/* Nested routes inside AppLayout for different pages */}
-            <Route path="about" element={<h1>About Page</h1>} /> {/* /about */}
-            <Route path="users" element={<h1>Users Page</h1>} /> {/* /users */}
-            <Route path="create-user" element={<h1>Create User Page</h1>  } /> {/* /create-user */}
+            <Route path="about" element={<About />} /> {/* /about */}
+            <Route path="users" element={<Users />} /> {/* /users */}
+            <Route path="create-user" element={<CreateUser />} /> {/* /create-user */}
           </Route>
 
           {/* Fallback route: render NotFound for any unmatched path ("404") */}
+          
         </Routes>
       </BrowserRouter>
     </ConfigProvider>
